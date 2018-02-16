@@ -11,6 +11,7 @@
         android:layout_height="140dp"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
         android:contentDescription="@string/thumbnail"
         android:scaleType="fitCenter"
         app:srcCompat="@mipmap/ic_launcher" />
@@ -63,6 +64,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"
         android:layout_below="@+id/movie_list_actors"
         android:text="@string/movie_seen"
         android:textSize="11dp"/>

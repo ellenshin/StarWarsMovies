@@ -2,6 +2,7 @@ package com.example.ellenshin.starwarsmovies;
 
 import android.content.Context;
 import android.content.Intent;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -75,7 +76,17 @@ public class MainActivity extends AppCompatActivity {
                 if (result.equals("")) {
                     selectedText.setText("Has Seen?");
                 } else {
-                    selectedText.setText(result);
+                    if (result.equals("Already Seen")) {
+                        selectedText.setText(result);
+                        selectedText.setTextColor(ContextCompat.getColor(myContext, R.color.colorAccent));
+                    } else if (result.equals("Want to see")) {
+                        selectedText.setText(result);
+                        selectedText.setTextColor(ContextCompat.getColor(myContext, R.color.colorPrimary));
+                    } else {
+                        selectedText.setText(result);
+                        selectedText.setTextColor(ContextCompat.getColor(myContext, R.color.colorPrimaryDark));
+                    }
+
                 }
 
             }
