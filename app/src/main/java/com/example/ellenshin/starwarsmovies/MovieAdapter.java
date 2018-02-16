@@ -36,7 +36,7 @@ public class MovieAdapter extends BaseAdapter {
     //methods
     //a list of methods we need to override
 
-    //gives ypu the number of recipes in the data source
+    //gives ypu the number of movies in the data source
 
     @Override
     public int getCount() {

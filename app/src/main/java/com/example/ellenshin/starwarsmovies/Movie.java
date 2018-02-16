@@ -24,16 +24,16 @@ public class Movie {
     // default
 
     // method
-    // static methods that read the json file in and load into Recipe
+    // static methods that read the json file in and load into movies
 
-    // static method that loads our recipes.json using the helper method
-    // this method will return an array list of recipes constructed from the JSON file
+    // static method that loads our movies.json using the helper method
+    // this method will return an array list of movies constructed from the JSON file
     public static ArrayList<Movie> getMoviesFromFile(String filename, Context context) {
         ArrayList<Movie> movieList = new ArrayList<Movie>();
 
         // try to read from JSON file
         // get information by using the tags
-        // construct a Recipe Object for each recipe in JSON
+        // construct a movie Object for each movie in JSON
         // add the object to arraylist
         // return arraylist
         try {
@@ -41,7 +41,7 @@ public class Movie {
             JSONObject json = new JSONObject(jsonString);
             JSONArray movies = json.getJSONArray("movies");
 
-            // for loop to go through each recipe in your recipes array
+            // for loop to go through each movie in your movies array
 
             for (int i = 0; i < movies.length(); i++) {
                 Movie movie = new Movie();
