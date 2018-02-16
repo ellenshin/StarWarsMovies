@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">StarWarsMovies</string>
+    <string name="thumbnail">This is a thumbnail.</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="movie_desc">Movie Description</string>
+    <string name="movie_actors">Movie Actors</string>
+    <string name="movie_seen">Has Seen?</string>
+    <string name="movie_detail_title">Movie Detail Title</string>
+    <string name="movie_radio_seen">Already Seen</string>
+    <string name="movie_radio_want">Want to see</string>
+    <string name="movie_radio_like">Do not like</string>
+    <string name="movie_detail_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</string>
+</resources>
